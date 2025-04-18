@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EnglishJanala</title>
+    <script src="https://kit.fontawesome.com/ce632679cd.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="./src/output.css" rel="stylesheet">
+</head>
+<body>
+    <!-- nav-bar -->
+    <section class="fixed w-full top-0 z-100 backdrop-blur-sm shadow-[inset_0_0_30px_rgba(107,114,128,0.2)]">
+      <section id="nav-bar" class="border-b border-[rgb(198,189,189)] py-4 hidden">
+        <section class="flex justify-between items-center w-[90%] my-0 mx-auto">
+            <div class="flex items-center font-semibold text-xl">
+                <span class="font-poppins">English</span>
+                <img src="./assets/logo.png" alt="Brand Logo">
+                <span class="font-hindSiliguri">জানালা</span>
+            </div>
+            <div class="flex items-center font-poppins gap-4">
+                <button id="faq-btn" class="btn btn-outline btn-primary"><i class="fa-solid fa-circle-question"></i> FAQ</button>
+                <button id="les-btn" class="btn btn-outline btn-primary"><i class="fa-solid fa-book-open"></i> Learn</button>
+                <button id="logout-btn" class="btn btn-outline btn-primary"><i class="fa-solid fa-right-from-bracket"></i> Logout</button>
+            </div>
+        </section>
+    </section>
+    </section>
+    <!-- banner start -->
+     <section id="banner-section" class="">
+        <section class="w-[90%] mx-auto flex justify-between items-center">
+            <div>
+                <h1 class="mb-6 font-poppins text-5xl font-bold"><span class="text-[#00bcff]">English</span> is Easy!!</h1>
+                <p class="font-hindSiliguri text-2xl w-[700px]">আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive Lessons আপনাকে নিয়ে যাবে অন্য একটি Level এ</p>
+                <div class="flex flex-col gap-5 items-start mt-10">
+                    <label class="input">
+                        <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g stroke-linejoin="round" stroke-linecap="round" stroke-width="2.5" fill="none" stroke="currentColor"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></g></svg>
+                        <input id="user-name" type="input" required placeholder="Username" pattern="[A-Za-z][A-Za-z0-9\-]*" minlength="3" maxlength="30" title="Only letters, numbers or dash" />
+                      </label>
+                      <label class="input">
+                        <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g stroke-linejoin="round" stroke-linecap="round" stroke-width="2.5" fill="none" stroke="currentColor"><path d="M2.586 17.414A2 2 0 0 0 2 18.828V21a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h1a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h.172a2 2 0 0 0 1.414-.586l.814-.814a6.5 6.5 0 1 0-4-4z"></path><circle cx="16.5" cy="7.5" r=".5" fill="currentColor"></circle></g></svg>
+                        <input id="pass" type="password" required placeholder="Password(123456)" minlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must be more than 8 characters, including number, lowercase letter, uppercase letter" />
+                      </label>
+                    <button class="btn btn-primary" id="log-btn">Get Started</button>
+                </div>
+            </div>
+            <div>
+                <img src="./assets/hero-student.png" alt="hero-student">
+            </div>
+            <div></div>
+        </section>
+     </section>
+     <!-- main section -->
+     <section id="main-section" class="hidden scroll-mt-30">
+        <section class="w-[90%] mx-auto mt-40">
+            <h1 class="text-center text-4xl font-poppins font-bold"><span class="text-[rgb(0,188,255)]">Let's</span> Learn Vocabularies</h1>
+            <div id="lessons" class="flex justify-center items-center gap-4 my-9"></div>
+            <div class="flex justify-center items-center p-8 bg-[rgb(248,248,248)] rounded-3xl">
+                <div id="word-card-con" >
+                  <div class="" id="loading-main">
+                    <div class="flex flex-col items-center justify-center gap-4 font-hindSiliguri">
+                      <img src="./assets/alert-error.png" alt="alert-error">
+                      <p class="text-base">আপনি এখনো কোন Lesson Select করেননি।</p>
+                      <h1 class="text-4xl">একটি Lesson Select করুন।</h1>
+                  </div>
+                  </div>
+                </div>
+                <div id="loading-gif" class="hidden">
+                  <div id="loading" class="flex justify-center items-center">
+                    <img src="./assets/spinner.gif" alt="loading">
+                  </div>
+                </div>
+            </div>
+        </section>
+     </section>
+        <!-- Frequently Asked Questions -->
+         <section id="faq" class="hidden relative z-50 scroll-mt-30">
+            <section class="w-[90%] mx-auto mt-35 mb-40">
+                <h1 class="mb-20 text-center text-4xl font-poppins font-bold"><span class="text-[rgb(0,188,255)]">Frequently</span> Asked Questions</h1>
+                <div class="flex flex-col gap-4">
+                    <div class="collapse collapse-plus bg-base-100 border border-base-300">
+                        <input type="radio" name="my-accordion-3" checked="checked" />
+                        <div class="collapse-title font-semibold">1. The difference between var, let, and const</div>
+                        <div class="collapse-content text-sm">Var is function-scoped, hoisted, let is block-scoped, not hoisted, const is  block-scoped, can’t be reassigned</div>
+                      </div>
+                      <div class="collapse collapse-plus bg-base-100 border border-base-300">
+                        <input type="radio" name="my-accordion-3" />
+                        <div class="collapse-title font-semibold">2. The difference between map(), forEach(), and filter()</div>
+                        <div class="collapse-content text-sm">map() always returns a new array, forEach() is loop but no return, filter() returns array with matched items.</div>
+                      </div>
+                      <div class="collapse collapse-plus bg-base-100 border border-base-300">
+                        <input type="radio" name="my-accordion-3" />
+                        <div class="collapse-title font-semibold">3. Explain arrow functions and how they are different from regular functions</div>
+                        <div class="collapse-content text-sm">Arrow Function is Shorter syntax.</div>
+                      </div>
+                      <div class="collapse collapse-plus bg-base-100 border border-base-300">
+                        <input type="radio" name="my-accordion-3" />
+                        <div class="collapse-title font-semibold">4. how JavaScript Promises work</div>
+                        <div class="collapse-content text-sm">Handle async code with then(), catch()</div>
+                      </div>
+                      <div class="collapse collapse-plus bg-base-100 border border-base-300">
+                        <input type="radio" name="my-accordion-3" />
+                        <div class="collapse-title font-semibold">5. How closures work in JavaScript</div>
+                        <div class="collapse-content text-sm">A closure happens when a function remembers the variables around it</div>
+                      </div>
+                </div>
+            </section>
+</section>
+<!-- footer -->
+<footer class="border-t-3 border-[rgb(255,235,235)]" id="footer-section"> 
+  <section class="flex justify-between items-center w-[90%] mx-auto py-20">
+    <div>
+      <div class="flex items-center font-semibold text-xl mb-5">
+        <span class="font-poppins">English</span>
+        <img src="./assets/logo.png" alt="Brand Logo">
+        <span class="font-hindSiliguri">জানালা</span>
+      </div>
+      <h1 class="font-hindSiliguri text-xl mb-2 font-medium">ইংরেজি শিখুন সহজে</h1>
+      <p class="text-base font-normal">Providing ED-Tech Applications since 2025</p>
+    </div>
+    <div>
+      <h1 class="text-[rgb(24,24,27)] font-sm font-semibold mb-4">Follow us</h1>
+      <div class="flex justify-center items-center gap-4">
+        <a target="_blank" href="https://www.facebook.com/profile.php?id=61555702511456"><img src="./assets/fb-thumb.png" alt="fb-icon" ></a>
+        <a target="_blank" href="https://github.com/Darpan-lab"><img src="./assets/github-thumb.png" alt="github-thumb"></a>
+        <a target="_blank" href="https://www.instagram.com"><img src="./assets/instagram-thumb.png" alt="instagram-thumb"></a>
+        <a target="_blank" href="https://www.youtube.com"><img src="./assets/youtube-thumb.png" alt="youtube-thumb"></a>
+      </div>
+    </div>
+  </section>
+</footer>
+<!-- modal-box -->
+<dialog id="my_modal_3" class="modal">
+  <div class="modal-box rounded-3xl">
+    <div id="word-modal p-6 font-hindSiliguri">
+      <div class="font-hindSiliguri text-2xl p-6 border-2 border-[rgb(237,247,255)] rounded-xl font-semibold">
+        <h1 class="text-4xl mb-8"><span id="word"></span> (<i class="fa-solid fa-microphone-lines"></i> :<span id="pronunciation"></span>)</h1>
+        <h3 class="mb-3">Meaning</h3>
+        <p id="meaning" class="mb-8 font-medium"></p>
+        <h3 class="mb-3">Example</h3>
+        <p id="example" class="text-[#333333] font-normal mb-8"></p>
+        <h3 class="font-medium mb-3">সমার্থক শব্দ গুলো</h3>
+        <div id="syn-con" class="text-xl font-normal flex gap-4"></div>
+      </div>
+    </div>
+    <form method="dialog">
+      <button class="font-poppins btn btn-primary mt-5 text-xl rounded-xl">Complete Learning</button>
+    </form>
+  </div>
+</dialog>
+<script src="./scripts/script.js"></script>
+</body>
+</html>
