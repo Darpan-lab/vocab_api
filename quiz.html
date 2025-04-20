@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Janala Quiz</title>
+    <link rel="stylesheet" href="src/output.css">
+</head>
+<body class="bg-[#031e4f] h-[100vh]">
+    <div class="navbar bg-[#02225c] shadow-[inset_0_0_30px_rgba(107,114,128,0.2)]">
+        <a onclick="window.location.href='./index.html'" class="font-normal font-poppins btn btn-primary text-xl">Back</a>
+    </div>
+    <section class="bg-white rounded-2xl w-[90%] mx-auto mt-6 lg:w-fit">
+        <section class="font-poppins p-5 lg:p-8 lg:w-lg flex justify-center flex-col">
+            <div class="">
+                <img class="mb-2" id="quiz-img" src="assets/quiz-icon.jpg" alt="quiz-icon">
+                <h1 class="text-[#031e4f] text-xl lg:text-2xl font-semibold mb-6 text-center">Test Your Vocabulary Level</h1>
+            </div>
+            <div id="quiz-con" class="hidden">
+                <p id="quiz-question" class="mb-4 text-xl lg:text-2xl"><span class="font-bold" id="quiz-qus-num"></span> What is the meaning of <span class="font-bold" id="quiz-word"></span></p>
+                <div id="quiz-option" class="font-hindSiliguri flex flex-col gap-4 text-lg">
+                    <button id="quiz-op-0" class="btn-main quiz-opt-check"></button>
+                    <button id="quiz-op-1" class="btn-main quiz-opt-check"></button>
+                    <button id="quiz-op-2" class="btn-main quiz-opt-check"></button>
+                    <button id="quiz-op-3" class="btn-main quiz-opt-check"></button>
+                </div>
+            </div>
+            <div class="hidden" id="score-con">
+                <p class="text-xl font-poppins">Your Score is <span class="font-bold" id="score-num">0</span> out of <span>10</span></p>
+                <a href="./quiz.html" target="_self">
+                    <button class="btn btn-soft btn-primary mt-4">Play Again</button>
+                </a>
+            </div>
+            <button id="quiz-next-btn" class="text-lg btn btn-primary mt-6 rounded-2xl">Next</button>
+        </section>
+    </section>
+<script src="scripts/quiz.js"></script>
+</body>
+</html>

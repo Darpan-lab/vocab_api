@@ -1,7 +1,20 @@
 @import "tailwindcss";
-@plugin "daisyui";
+@plugin "daisyui" {
+  themes: light --default;
+}
 @theme {
     --font-hindSiliguri: "Hind Siliguri", sans-serif;
     --font-inter: "Inter", sans-serif;
     --font-poppins: "Poppins", sans-serif;
+
   }
+
+.btn-main{
+  @apply p-3 border-1 rounded-2xl border-black cursor-pointer;
+}
+.btn-wrong{
+  @apply p-3 rounded-2xl bg-[#eb5971] cursor-pointer;
+}
+.btn-right{
+  @apply p-3 rounded-2xl bg-[#00bf83] cursor-pointer;
+}
