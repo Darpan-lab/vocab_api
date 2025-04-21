@@ -29,6 +29,7 @@ let QuizCount = 1;
         const quizDatas = await fetch('https://openapi.programming-hero.com/api/words/all');
         const quizWords = await quizDatas.json();
         const wordsHaveMeaning = quizWords.data.filter(word => word.meaning);
+        console.log(wordsHaveMeaning)
         const randomQuizQesWordIndex = Math.floor(Math.random() * wordsHaveMeaning.length);
         const randomQuizQesWord = wordsHaveMeaning[randomQuizQesWordIndex];
         quizWord.innerText = randomQuizQesWord.word;
