@@ -41,7 +41,7 @@ Every Word Card Has Two Icons **More Info** (left) and **Pronounce** (right).
 - Clicking the **Pronounce button** triggers the pronunciation of the word.
 
 ### 4. Smart Handling of Undefined / Null Values
-- If a word doesn't have a Bangla meaning or synonyms, a meaningful message like “অর্থ নেই” is shown instead.
+- On API, some words don't have Bangla meaning and synonyms. In this case, when it produces undefined or null, I use a meaningful message (like 'অর্থ নেই', or keep it empty) instead of this null value
 - For Lesson 6 and Lesson 7, the API doesn’t provide any data. So, I display a message like-
     
     `“এই Lesson এ এখনো কোন Vocabulary যুক্ত করা হয়নি।”`
