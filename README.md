@@ -5,7 +5,7 @@
 This is an **API-based Vocabulary Learning Website**.  
 Through this project, my goal is to learn how to fetch data from an API and manage that data to build a **readable and attractive** website.  Also, there's a **Quiz Section**, which is the most interesting and challenging part of this project.  
 
-⚠️ As this is an API-based website, please make sure you have a stable internet connection.
+⚠️ As this is an API based website, please make sure you have a stable internet connection.
 
 ## API List
 As I'm currently doing **Programming Hero's** Web Development Course, this API is provided by them for **learning/building** this project. Actually, this Vocabulary Website is an **assignment** for the course.
