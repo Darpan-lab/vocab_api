@@ -3,7 +3,7 @@
 This is an **API-based Vocabulary Learning Website**.  
 Through this project, my goal is to learn how to fetch data from an API and manage that data to build a **readable and attractive** website.  Also, there's a **Quiz Section**, which is the most interesting and challenging part of this project.  
 
-**Live Link: `https://darpan-lab.github.io/vocab_api/`**
+## **Live Link: `https://darpan-lab.github.io/vocab_api/`**
 
 ⚠️ As this is an API-based website, please make sure you have a stable internet connection.
 
