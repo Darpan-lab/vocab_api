@@ -75,7 +75,7 @@ As it’s a full website, there are a lot of small components or functionalities
 
 ## Challenges
 
-The most interesting and time-consuming part was building the **Quiz functionality**.
+The most interesting and time consuming part was building the **Quiz functionality**.
 
 ### Logic Behind the Quiz:
 The API I used includes about 170 unique words with full details.But not all words have meanings.So, to filter those that do, I used:
@@ -96,6 +96,8 @@ Please check my `quiz.js` file on GitHub.You can easily understand the logic I u
 
 ## Note...
 
-- As this is an API-based website, please make sure you have a good internet connection.
+- As this is an API based website, please make sure you have a good internet connection.
 
 - I'm still learning web development. I recently finished Intermediate Level JavaScript.Within a few days, I’ll start React JS, and then move to backend (Node.js).So, the login/logout functionality in this project is frontend only.
+
+# I hope you like my project. Thank You
