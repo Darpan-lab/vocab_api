@@ -96,4 +96,4 @@ Please check my `quiz.js` file on GitHub.You can easily understand the logic I u
 
 - As this is an API-based website, please make sure you have a good internet connection.
 
-- I'm still learning web development. I recently finished Intermediate Level JavaScript.Within a few days, I’ll start React JS, and then move to backend (Node.js).So, the login/logout functionality in this project is frontend-only.
+- I'm still learning web development. I recently finished Intermediate Level JavaScript.Within a few days, I’ll start React JS, and then move to backend (Node.js).So, the login/logout functionality in this project is frontend only.
