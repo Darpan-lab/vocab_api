@@ -90,7 +90,7 @@ The correct answer is randomly placed among the four options using:
 
 `randomCorrectOpt = Math.floor(Math.random() * 4);`
 
-Please check my quiz.js file on GitHub.You can easily understand the logic I used.
+Please check my `quiz.js` file on GitHub.You can easily understand the logic I used.
 
 ## Note...
 
