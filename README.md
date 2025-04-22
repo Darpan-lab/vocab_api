@@ -78,7 +78,7 @@ As it’s a full website, there are a lot of small components or functionalities
 The most interesting and time consuming part was building the **Quiz functionality**.
 
 ### Logic Behind the Quiz:
-The API I used includes about 170 unique words with full details.But not all words have meanings.So, to filter those that do, I used:
+The API I used includes about 170 unique words with full details.But not all words have meanings.So, to filter those words, I used-
 
 `quizWords.data.filter(word => word.meaning);`
 
