@@ -45,7 +45,7 @@ Every Word Card Has Two Icons **More Info** (left) and **Pronounce** (right).
 - For Lesson 6 and Lesson 7, the API doesn’t provide any data. So, I display a message like-
     
     `“এই Lesson এ এখনো কোন Vocabulary যুক্ত করা হয়নি।”`
-- If no lesson is selected after loading, it shows-  
+- If no lesson is selected after the website loading, it shows-  
   `“আপনি এখনো কোন Lesson Select করেননি।”`
 
 ### 5. Loading Status
