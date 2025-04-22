@@ -1,8 +1,8 @@
 ## **Live Link: `https://darpan-lab.github.io/vocab_api/`**
 
-# Vocabulary Learning Website (API-Based)
+# Vocabulary Learning Website (API Based)
 
-This is an **API-based Vocabulary Learning Website**.  
+This is an **API based Vocabulary Learning Website**.  
 Through this project, my goal is to learn how to fetch data from an API and manage that data to build a **readable and attractive** website.  Also, there's a **Quiz Section**, which is the most interesting and challenging part of this project.  
 
 ⚠️ As this is an API based website, please make sure you have a stable internet connection.
