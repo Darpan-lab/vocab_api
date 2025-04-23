@@ -59,7 +59,7 @@ Fully Mobile Responsive Website
 (But I recommend using a computer for a better experience.)
 
 ### 8. Quiz Section (Most Interesting!)
-This section is designed to test your vocabulary.It’s **not** a **Static, Fixed Question** quiz. Each time you click Next, it randomly picks a word from the API and asks for its meaning. I’ve explained about `Quiz Section` in detail in the **Challenge section**.
+This section is designed to test students' vocabulary.It’s **not** a **Static, Fixed Question** quiz. Each time you click Next, it randomly picks a word from the API and asks for its meaning. I’ve explained about `Quiz Section` in detail in the **Challenge section**.
 
 ## Tools & Languages Used
 
